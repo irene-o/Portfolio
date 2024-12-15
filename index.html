@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Irene's Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+        <a href="index.html" class="text-decoration-none fw-bold p-3 text-dark">Home</a>
+        <a href="features.html" class="text-decoration-none fw-bold p-3 text-dark">About</a>
+        <div class="container-fluid d-flex justify-content-end">
+            <button id="contactButton" type="button" class="btn btn-dark fw-bold text-white h3 d-flex"
+                data-bs-toggle="modal" data-bs-target="#contactModal">
+                Contact Me
+            </button>
+        </div>
+    </nav>
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLongTitle">Contact Me Directly</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Phone Number: +353 89 453 4734</p>
+                    <p>Email: irenevoen@gmail.com</p>
+                    <!--Linkedin Icon-->
+                    <a href="https://www.linkedin.com/in/ireneogbevoen">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselinfo" class="carousel carousel-dark slide w-100">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselinfo" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselinfo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselinfo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselinfo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/bluesplash.jpg" class="d-block w-100" alt="slide 1">
+                <div class="carousel-caption d-none d-md-block text-dark-emphasis">
+                    <h5 class="fw-bold">Work Experience</h5>
+                    <p>View my work experience and skills</p>
+                    <a class="btn btn-dark mb-3 mt-2 fw-bold" href="#WorkExperience">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/greensplash.jpg" class="d-block w-100" alt="slide 2">
+                <div class="carousel-caption d-none d-md-block text-dark-emphasis">
+                    <h4 class="fw-bold">Education</h4>
+                    <p>Features my current educational progress and grades.</p>
+                    <a class="btn btn-primary mb-3 mt-2 fw-bold" href="#EduGrades">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/orangesplash.jpg" class="d-block w-100" alt="slide 3">
+                <div class="carousel-caption d-none d-md-block text-dark-emphasis">
+                    <h4 class="fw-bold">Projects and Achievements</h4>
+                    <p>Explore my previous work.</p>
+                    <a class="btn btn-info mb-3 mt-2 fw-bold text-white" href="#Projects">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="carousel-item">
+                <img src="images/pinksplash.jpg" class="d-block w-100" alt="slide 4">
+                <div class="carousel-caption d-none d-md-block text-dark-emphasis">
+                    <h4 class="fw-bold">My Interests</h4>
+                    <p>Learn about my hobbies and interests!</p>
+                    <a class="btn btn-success mb-3 mt-2 fw-bold" href="#Hobbies">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-caption d-flex justify-content-center align-items-center h-100 mw-100 mb-5" style="pointer-events: none;">
+            <div class="w-25"><img class="rounded m-5 img-fluid" src="images/irene.jpg" alt="Irene Ogbevoen"></div>
+            <div class="container flex-column w-50">
+                <p class="fst-italic m-0">My name is</p>
+                <h1 class="fw-bold text-dark-emphasis mb-5">Irene Ogbevoen</h1>
+                <p class="text-dark-emphasis">Welcome to my Portfolio Website! I am a 4th Year Computing Student from
+                    TU Dublin Tallaght, specialising in Software Development. Learn More about me below.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselinfo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselinfo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="d-flex flex-column m-5">
+        <h1 id="WorkExperience" class="text-center m-5">My Work Experience</h1>
+        <div id="dealz" class="card w-75 h-25 d-flex flex-row rounded">
+            <img class="w-50 img-fluid" src="images/dealz.png">
+            <div class="card-body text-center">
+                <h2 class="fw-bold">Sales Associate</h2>
+                <p class="fw-bold">Poundland Limited</p>
+                <p class="fst-italic">December 2020 - January 2021</p>
+            </div>
+        </div>
+        <div style="border-right: 2px solid rgb(176, 255, 255); height: 150px; width: 50%; margin: 25px;"></div>
+        <div id="workhuman" class="d-flex justify-content-end mt-3">
+            <div class="card w-75 h-25 d-flex flex-row rounded">
+                <img class="w-50" src="images/workhuman.png">
+                <div class="card-body text-center">
+                    <h2 class="fw-bold">Data Engineering Intern</h2>
+                    <p class="fw-bold">Workhuman LTD</p>
+                    <p class="fst-italic">January 2024 - July 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column text-center p-3">
+        <h1 id="EduGrades" class="p-3 mb-3">Education and Grades</h1>
+        <div class="d-flex justify-content-center m-3">
+            <div class="card w-75 d-flex">
+                <div class="card-body d-flex align-items-center">
+                    <h4 class="text-info">Currently Pursuing:</h4>
+                    <div>
+                        <h3>Bachelor of Science (Hons) in Computing with Software Development</h3>
+                        <p>Technological University Dublin, Tallaght</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion m-5" id="gradesAccord">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Yr1Grades">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h3>1st Year</h3>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="Yr1Grades"
+                    data-bs-parent="#gradesAccord">
+                    <div class="accordion-body d-flex justify-content-center">
+                        <ul class="text-start list-group w-75">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Software Development 1</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Discrete Mathematics 1</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Visual Design and User Experience</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Critical Skills Development</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Computer Architecture</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Systems Analysis</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Software Development 2</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Database Fundamentals</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Statistics</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Operating Systems Fundamentals</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>French</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Object Oriented Systems Analysis</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Yr2Grades">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>2nd Year</h3>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Yr2Grades"
+                    data-bs-parent="#gradesAccord">
+                    <div class="accordion-body d-flex justify-content-center">
+                        <ul class="text-start list-group w-75">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Software Development 3</span>
+                                <span class="fw-bold">B-</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Software Quality Assurance & Testing</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Advanced Database Technologies</span>
+                                <span class="fw-bold">B-</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Network Fundamentals</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Client-Side Web Development</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Discrete Mathematics 2</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Database Admin & Analysis</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Management Science</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Routing & Switching Essentials</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Project</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Information Security</span>
+                                <span class="fw-bold">A</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Software Development 4</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Yr3Grades">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>3rd Year</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="Yr3Grades"
+                    data-bs-parent="#gradesAccord">
+                    <div class="accordion-body d-flex justify-content-center">
+                        <ul class="text-start list-group w-75">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Data Structures & Algorithms</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Cloud Services & Distributed Computing</span>
+                                <span class="fw-bold">B-</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Data Analysis</span>
+                                <span class="fw-bold">B</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Big Data Technologies</span>
+                                <span class="fw-bold">C+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Operating Systems</span>
+                                <span class="fw-bold">B+</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Server-Side Web Development</span>
+                                <span class="fw-bold">C</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-5">
+        <h1 id="Projects" class="p-5 text-center">Projects and Achievements</h1>
+        <div class="card text-center">
+            <div class="card-body">
+                <!-- Tab Headers -->
+                <div class="d-flex align-items-start">
+                    <!-- 2nd Year Section -->
+                    <div class="tab w-50 border" data-bs-toggle="collapse" data-bs-target="#year2Content" role="button"
+                        aria-expanded="true"
+                        style="cursor: pointer; background-color: rgb(176, 255, 255); border: 2px solid transparent; transition: background-color 0.3s ease, border-color 0.3s ease;">
+                        <h2 class="p-3">2nd Year Project</h2>
+                    </div>
+
+                    <!-- 4th Year Section -->
+                    <div class="tab w-50 border position-relative" data-bs-toggle="collapse"
+                        data-bs-target="#year4Content" role="button" aria-expanded="false"
+                        style="cursor: pointer; background-color: transparent; border: 2px solid transparent; transition: background-color 0.3s ease, border-color 0.3s ease;">
+
+                        <p class="text-info fw-bold position-absolute" style="left: 3px; margin: 0;">In Progress:</p>
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                            <h2 class="p-3">4th Year Project</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse-container mt-4">
+                    <!-- 2nd Year Dropdown Content -->
+                    <div id="year2Content" class="collapse show" data-bs-parent=".collapse-container">
+                        <h3 class="p-3">Tenner: A Freelance Service-for-Hire Website</h3>
+                        <div class="p-3 bg-light rounded d-flex justify-content-center">
+                            <p class="text-start w-75">A simple E-commerce website inspired by the freelance for hire
+                                site - Fiverr.
+                                The goal of the project was to provide a platform for freelance workers to market their
+                                skills to a wider audience.
+                                Services provided were digital-based and available upon completion. We also integrated
+                                Stripe into our payment options,
+                                as it is secure and easy to use.
+                            </p>
+                        </div>
+                        <img src="images/tenner_screencap.png" alt="tenner website" class="mw-100">
+                        <p class="fw-bold fst-italic p-3">Technologies: Python, Django, HTML, CSS</p>
+                        <a href="https://github.com/kjatillo/year2-project" class="btn btn-outline-info">
+                            Link to Repo
+                        </a>
+                    </div>
+
+                    <!-- 4th Year Dropdown Content -->
+                    <div id="year4Content" class="collapse" data-bs-parent=".collapse-container">
+                        <h3 class="p-3">JamPacked: The Event Planning Platform </h3>
+                        <div class="p-3 bg-light rounded d-flex justify-content-center">
+                            <p class="text-start w-75">JamPacked is an event planning web application designed for
+                                planning social events like parties, trips, weddings and other social gatherings.
+                                This application is designed to make planning more manageable and accessible and make
+                                planning events a fun activity that can be done with others.
+                                It aims to take the stress out of event planning, allowing users to easily access event
+                                details, plans, tasks and RSVP for events on a dedicated platform.
+                                The core of this application is easy and fun collaboration, keeping the user experience
+                                at the highest priority.
+                            </p>
+                        </div>
+                        <p class="fw-bold fst-italic">Technologies: MERN Stack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-5">
+            <div class="card-body">
+                <div class="p-3">
+                    <h2 class="p-5">2024 Tallaght Hospital Transforming Healthcare Hackathon Winner</h2>
+                    <div class="d-flex flex-column flex-md-row">
+                        <!-- Youtube Video Embed -->
+                        <div style="position: relative; height: auto; overflow: hidden;" class="mb-3 mb-md-0">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/slwEje7z-Zw?si=NTtJkmr0_ETe6p7N"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="card p-3 ms-3 text-start" style="width: 100%; height: fit-content; max-width: 40%;">
+                            <p>I had the great opportunity to come back for my third and final Hackathon
+                                with a team of my wonderful and determined friends; Noor Isha Nadeem, Moyin Olusona and
+                                Sayali Mote.
+                                We were presented with a challenging, real-world problem, preventing the formation of
+                                pressure ulcers in patients.
+                                Our solution involved creating a new fabric with micro-bit technology, allowing for
+                                monitoring of pressure build up
+                                in different parts of the body. Due to our collective efforts, we ended up winning the
+                                overall prize, which was such an amazing achievement for
+                                our last year in TU Dublin!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Hobbies" class="text-center">
+        <h1 class="p-5">My Interests</h1>
+        <div class="card container">
+            <div class="card-body">
+                    <h3 class="p-3">Photography</h3>
+                    <p>Here are some of my favourite pictures that I've taken!</p>
+                    <div class="w-50 p-3">
+                        <div class="d-flex">
+                            <img src="images/wallows1.JPG" class="img-fluid">
+                            <img src="images/lamp.JPG" class="img-fluid">
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/chinatown.jpg" class="img-fluid">
+                            <img src="images/belgium.jpg" class="img-fluid">
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/sisters.jpg" class="img-fluid">
+                            <img src="images/casey.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <h3 class="p-5">Movies</h3>
+                    <p>One of my favourite hobbies is going to the cinema! Here are some of my top movies:</p>
+                    <div class="p-3" style="width: 33%;">
+                        <div class="d-flex">
+                            <img src="images/coraline.jpg" class="img-fluid p-3">
+                            <img src="images/spiderman.jpg" class="img-fluid p-3">
+                            <img src="images/platform.jpg" class="img-fluid p-3">
+                        </div>
+                    </div>    
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contactme" class="m-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="p-3 text-center">Leave a Message</h1>
+                <form id="contactForm" class="p-3">
+                    <div class="mb-3" style="display: flex; gap: 10px;">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" class="w-25"
+                            required>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="w-25" required>
+                    </div>
+                    <input type="text" id="replyEmail" name="replyEmail" placeholder="Your Email" class="w-50" required>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required
+                        class="w-100 mt-3"></textarea>
+                    <button id="submitButton" type="submit" class="btn btn-outline-info mt-5" style="display: block;">
+                        Submit
+                    </button>
+                    <button id="submittingButton" type="submit" class="btn btn-outline-info mt-5"
+                        style="display: none;">
+                        <div class="d-flex">
+                            <span id="formSpinner" class="spinner-border spinner-border-sm me-2 mt-1" role="status"
+                                aria-hidden="true"></span>
+                            Submitting
+                        </div>
+                    </button>
+                </form>
+                <div id="confirmationMessage" class="modal" tabindex="-1" role="dialog" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Your Message has been sent!</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Thank you for enquiring! Expect a response within a few days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
